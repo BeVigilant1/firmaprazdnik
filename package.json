@@ -1,0 +1,22 @@
+{
+  "name": "firmaprazdnik",
+  "version": "1.0.0",
+  "description": "firmaprazdnik site",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeVigilant1/firmaprazdnik.git"
+  },
+  "author": "Dan Kovtun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeVigilant1/firmaprazdnik/issues"
+  },
+  "homepage": "https://github.com/BeVigilant1/firmaprazdnik#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
