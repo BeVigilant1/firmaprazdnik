@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/BeVigilant1/firmaprazdnik#readme",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.1.1"
   },
   "devDependencies": {
     "gulp-sass": "^2.3.2"
+=======
+    "express": "^4.14.0"
+>>>>>>> 6616be599787e33934efd3280462b7934535f326
   }
 }
