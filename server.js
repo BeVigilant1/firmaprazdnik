@@ -1,23 +1,46 @@
-// server.js
+var http = require("http"),
+    url = require("url"),
+    path = require("path"),
+    fs = require("fs")
+    port = process.argv[2] || 8888;
 
-// Generate a new instance of express server.
-var express = require('express')
-  , http = require('http');
+http.createServer(function(request, response) {
 
-var app = express();
+  var uri = url.parse(request.url).pathname
+    , filename = path.join(process.cwd(), uri);
 
-/* This will allow Cozy to run your app smoothly but
- it won't break other execution environment */
-var port = process.env.PORT || 8000;
-var host = process.env.HOST || "localhost";
+  var contentTypesByExtension = {
+    '.html': "text/html",
+    '.css':  "text/css",
+    '.js':   "text/javascript"
+  };
 
-// Starts the server itself
-var server = http.createServer(app).listen(port, host, function() {
-  console.log("Server listening to %s:%d within %s environment",
-              host, port, app.get('env'));
-});
+  fs.exists(filename, function(exists) {
+    if(!exists) {
+      response.writeHead(404, {"Content-Type": "text/plain"});
+      response.write("404 Not Found\n");
+      response.end();
+      return;
+    }
 
-// At the root of your website, we show the index.html page
-app.get('/', function(req, res) {
-  res.sendFile('index.html', { root: __dirname });
-});
+    if (fs.statSync(filename).isDirectory()) filename += '/index.html';
+
+    fs.readFile(filename, "binary", function(err, file) {
+      if(err) {        
+        response.writeHead(500, {"Content-Type": "text/plain"});
+        response.write(err + "\n");
+        response.end();
+        return;
+      }
+
+      var headers = {};
+      var contentType = contentTypesByExtension[path.extname(filename)];
+      if (contentType) headers["Content-Type"] = contentType;
+      response.writeHead(200, headers);
+      response.write(file, "binary");
+      response.end();
+    });
+  });
+}).listen(parseInt(port, 10));
+
+console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
