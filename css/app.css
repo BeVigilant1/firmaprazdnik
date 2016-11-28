@@ -1,8 +1,10 @@
+@charset "UTF-8";
 body {
   padding-top: 40px;
   font-family: 'Scada', sans-serif; }
 
-.jumbotron p:first-child {
+.jumbotron    
+p:first-child {
   margin-top: 10px; }
 
 .partners {
