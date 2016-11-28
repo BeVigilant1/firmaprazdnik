@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var http = require("http"),
     url = require("url"),
     path = require("path"),
@@ -45,7 +45,7 @@ http.createServer(function(request, response) {
 }).listen(parseInt(port, 10));
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
-=======
+
 // server.js
 
 // Generate a new instance of express server.
@@ -69,4 +69,4 @@ var server = http.createServer(app).listen(port, host, function() {
 app.get('/', function(req, res) {
   res.sendFile('index.html', { root: __dirname });
 });
->>>>>>> 6616be599787e33934efd3280462b7934535f326
+
