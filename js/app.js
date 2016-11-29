@@ -1,4 +1,5 @@
 $(document).ready(function(){
+<<<<<<< HEAD
  // Activate Carousel
 $("#myCarousel").carousel();
 
@@ -15,5 +16,8 @@ $(".left").click(function(){
 $(".right").click(function(){
     $("#myCarousel").carousel("next");
 });
+=======
+ $('.carousel').carousel()
+>>>>>>> a7660a3054329d217d1f393be78d9024c4f8fef9
      
 });
