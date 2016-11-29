@@ -1,11 +1,96 @@
-@charset "UTF-8";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 body {
   padding-top: 40px;
-  font-family: 'Scada', sans-serif; }
+  font-family: 'Scada', sans-serif;
+  font-size: 14pt;
+  background: #b4e5f9;
+  color: #005290; }
 
-.jumbotron    
-p:first-child {
-  margin-top: 10px; }
+h1 {
+  font-size: 3em; }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height: 100%; }
+
+.jumbotron {
+  background: #b4e5f9;
+  background-image: url("../img/bkg_jumbotron.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -10vh;
+  color: #C7254E;
+  border-radius: 0; }
+  .jumbotron h1 {
+    font-size: 3em; }
+  .jumbotron p {
+    font-size: 1em; }
+  .jumbotron .morozik {
+    max-width: 25vw; }
+  .jumbotron .info {
+    padding: 10px;
+    display: inline; }
+  .jumbotron .btn.btn-default {
+    display: block;
+    margin: 10px auto;
+    height: 60px;
+    width: 320px;
+    font-size: 14pt;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+    background: #C7254E;
+    color: white; }
+    .jumbotron .btn.btn-default:hover {
+      background: maroon;
+      color: #C7254E; }
+    .jumbotron .btn.btn-default:active {
+      color: white; }
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+.item:nth-child(1) {
+  background: #74C390; }
+
+.item:nth-child(2) {
+  background: #51BCE8; }
+
+.item:nth-child(3) {
+  background: #E46653; }
+
+.flat-icons {
+  margin-top: 10vh; }
+
+.texter {
+  text-align: center;
+  font-size: 75px;
+  display: block;
+  color: #005290; }
+  .texter p {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px; }
 
 .partners {
   margin: 20px 20px 80px; }
