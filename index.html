@@ -7,6 +7,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Фирма праздник</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
@@ -60,19 +62,110 @@
           
           <div class="container">
             
-            <h1>Мы сделаем Ваш праздник</h1>
-            
-            <p>"Фирма Праздник" c 2002 года занимается организацией, оформлением и проведением праздников в Ногинске, Электростали, в Ногинском районе.</p>
-            
-            <p>Наша фирма организует и проводит праздники "от А до  Я  ", то есть мы пишем и воплощаем сценарии праздника, помогаем с выбором места проведения, украшаем мероприятие, приглашаем артистов, тамаду, музыкантов, клоунов, диджеев, видеооператора и других специалистов творческого жанра, организуем транспорт, фото и видеосъемку с последующим видеомонтажом или выполняем конкретный вид услуг для вашего праздника.</p>
-          
-          <button type="button" class="btn btn-default float-xs-right">Default</button>
-           
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 centered">
+                  
+                    <img class="img-responsive morozik" src="img/morozik.png" alt="Дед Мороз">
+ 
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+
+                    <div class="info centered">
+
+                          <h1>Дед Мороз и Снегурка</h1>
+                          
+                          <p>Для сына и дочурки</p>
+                          
+                          <p>Успей заказать Деда Мороза своему ребенку, по специальной цене! Новый год наступает на пятки.</p>
+
+                     </div>
+
+                          <button type="button" class="btn btn-default">Сделать заказ</button>
+                    
+                    
+
+                </div>
+
+            </div>    
+             
           </div>
           
       </div>
 
+     
+          
       <div class="container">
+            
+        <h1>Ваш праздник готов!</h1>
+          
+          <div class="row">
+            <div class="container">
+                      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+                    </div>
+            </div>
+          </div>
+
+
+          <div class="row flat-icons">
+              
+              <div class="col-md-4">
+
+              
+                 <div class="texter">
+             
+                        <span class="glyphicon glyphicon-time"></span>
+
+                        <p>"Фирма Праздник" c 2002 года занимается организацией, оформлением и проведением праздников в Ногинске, Электростали, в Ногинском районе.</p>
+                  
+                  </div>
+              
+              </div>
+
+              <div class="col-md-4">
+                
+                 <div class="texter">
+             
+                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                <p>Наша фирма организует и проводит праздники "от А до  Я  ", то есть мы пишем и воплощаем сценарии праздника, помогаем с выбором места проведения, украшаем мероприятие, приглашаем артистов, тамаду,</p> 
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                    <div class="texter">
+             
+                        <span class="glyphicon glyphicon-bullhorn"></span>
+                  
+                  <p>музыкантов, клоунов, диджеев, видеооператора и других специалистов творческого жанра, организуем транспорт, фото и видеосъемку с последующим видеомонтажом или выполняем конкретный вид услуг для вашего праздника.</p>
+                    </div>
+              </div>
+            </div>
+            
+            
+        
+       
+           
+      </div>
+          
+      
+
+      <div class="container clearfix">
 
           <div class="logos col-md-12">
 
@@ -144,7 +237,9 @@
    </section>
 
    <footer>
-
+    
+     <div class="container">
+      
           <p>
               Контакты "Фирмы Праздник":
               8(905) 559 92 91, 8(903) 237 00 86.
@@ -153,14 +248,18 @@
               Наша почта kovtungal@mail.ru 
           </p>
 
+      </div>
+
    </footer>
         
-
-   <script src="js/bootstrap.min.js"></script>
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="js/app.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+
+
 
   </body>
 </html>
