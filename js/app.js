@@ -1,23 +1,22 @@
-$(document).ready(function(){
-<<<<<<< HEAD
- // Activate Carousel
-$("#myCarousel").carousel();
+$(document).ready(function() {
+	var sliderCarousel = $("#myCarousel");
+	sliderCarousel.owlCarousel({
+		loop: true,
+		items: 1,
+		center: true,
+		autoplay: true,
+		dots: true
+	});
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-    $("#myCarousel").carousel(1);
-});
+	console.log(sliderCarousel);
 
-// Enable Carousel Controls
-$(".left").click(function(){
-    $("#myCarousel").carousel("prev");
-});
+	/*$(".clients__carousel-arrow--left").on('click', function(event) {
+		sliderCarousel.trigger('next.owl.carousel');
+		event.preventDefault();
+	});
 
-$(".right").click(function(){
-    $("#myCarousel").carousel("next");
-});
-=======
- $('.carousel').carousel()
->>>>>>> a7660a3054329d217d1f393be78d9024c4f8fef9
-     
+	$(".clients__carousel-arrow--right").on('click', function(event) {
+		sliderCarousel.trigger('prev.owl.carousel');
+		event.preventDefault();
+	});*/
 });
