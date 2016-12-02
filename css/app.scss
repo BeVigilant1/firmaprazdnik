@@ -1,7 +1,8 @@
 @import "./variables.scss";
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "./navbar-theme.scss";
-
+@import "http://webfonts.ru/import/freeride.css";
+@import "http://webfonts.ru/import/boblic.css";
 
 
 * {
@@ -12,15 +13,28 @@
 
 body {
 	padding-top: 40px;
-	font-family: 'Scada', sans-serif;
+	font-family: 'Boblic', sans-serif;
 	font-size: $main-text;	
-	background: #b4e5f9;
-	color:#005290;
+	background: rgba(180, 229, 249, 0.2); 
+  background-image: url('../img/back_texture.png');
+	 background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#005290;
+
 
 }
 
 h1 {
 	font-size: 3em;
+  font-family: 'Freeride';
+}
+  
+h2 {
+  font-size: 2em;
+  font-family: 'Freeride';
+  margin-bottom: 40px;
+
 }
 
 
@@ -57,21 +71,23 @@ h1 {
 
 
 .jumbotron {
-	background: #b4e5f9;
-	background-image: url('../img/bkg_jumbotron.png');
-	background-repeat: no-repeat;
+	background: transparent;
+	// background-image: url('../img/3482.jpg');
+	// background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -10vh;
 	color: #C7254E;
 	border-radius: 0;
-	 	
-	 
+	padding-bottom: 0;
+	 margin-bottom: 0;
 	
 		h1 {
 			font-size: 3em;
 		
 		}
+    
+  
 
 		p {
 			font-size: 1em;
@@ -86,7 +102,6 @@ h1 {
 		.info {
 				padding: 10px;
 				display: inline;
-				
 
 		}	
 			
@@ -268,6 +283,7 @@ h1 {
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
+  max-height: 300px;
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
