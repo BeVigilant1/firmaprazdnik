@@ -47,12 +47,13 @@ http.createServer(function(request, response) {
   });
 }).listen(parseInt(port, 10));
 
-var livereload = require('livereload');
-var lrserver = livereload.createServer();
-lrserver.watch(__dirname + "/firmaprazdnik");
+
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
 
+var livereload = require('livereload');
+var lrserver = livereload.createServer();
+lrserver.watch(__dirname + "/css");
 
 // // server.js
 
