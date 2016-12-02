@@ -40,7 +40,6 @@
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffbbbc;
     background-color: maroon; } }
-
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -91,7 +90,7 @@ h1 {
   .jumbotron p {
     font-size: 1em; }
   .jumbotron .morozik {
-    max-width: 25vw; }
+    max-width: 350px; }
   .jumbotron .info {
     padding: 10px;
     display: inline; }
@@ -169,13 +168,11 @@ h1 {
     opacity: 1; }
   100% {
     opacity: 0; } }
-
 @keyframes fadeOut {
   0% {
     opacity: 1; }
   100% {
     opacity: 0; } }
-
 /* 
  * 	Owl Carousel - Auto Height Plugin
  */
@@ -361,3 +358,5 @@ h1 {
     margin-right: 0; }
   .owl-dot.active {
     background-color: #005290; }
+
+/*# sourceMappingURL=app.css.map */
