@@ -40,6 +40,11 @@
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffbbbc;
     background-color: maroon; } }
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 body {
   padding-top: 40px;
   font-family: 'Scada', sans-serif;
@@ -58,7 +63,8 @@ h1 {
   height: 100%; }
 
 .navbar-brand {
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 10px 0 0 10px; }
 
 .navbar-nav .nav-link {
   padding: 10px;
@@ -120,6 +126,14 @@ h1 {
 
 .partners {
   margin: 20px 20px 80px; }
+  .partners img {
+    opacity: 0.3;
+    max-width: 140px;
+    max-height: 75px;
+    transition: all(0.3); }
+    .partners img:hover {
+      opacity: 1;
+      cursor: pointer; }
 
 .logos {
   display: flex;
@@ -337,12 +351,12 @@ h1 {
   height: 0.625em;
   width: 0.625em;
   margin: 0 0.625em 0.0625em 0;
-  border: 0.125em black solid;
+  border: 0.125em #005290 solid;
   border-radius: 50%;
   cursor: pointer; }
   .owl-dot:last-child {
     margin-right: 0; }
   .owl-dot.active {
-    background-color: black; }
+    background-color: #005290; }
 
 /*# sourceMappingURL=app.css.map */
