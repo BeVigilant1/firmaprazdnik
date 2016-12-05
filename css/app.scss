@@ -25,6 +25,15 @@ body {
 
 }
 
+
+.modal-content {
+  border:none;
+  font-size: 16pt;
+   .modal-body,.modal-header,.modal-footer {
+    border:none;
+   }
+}
+
 h1 {
 	font-size: 3em;
   font-family: 'Freeride';

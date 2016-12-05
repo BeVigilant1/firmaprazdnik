@@ -50,13 +50,19 @@
 body {
   padding-top: 40px;
   font-family: 'Boblic', sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
   background: rgba(180, 229, 249, 0.2);
   background-image: url("../img/back_texture.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   color: #005290; }
+
+.modal-content {
+  border: none;
+  font-size: 16pt; }
+  .modal-content .modal-body, .modal-content .modal-header, .modal-content .modal-footer {
+    border: none; }
 
 h1 {
   font-size: 3em;
