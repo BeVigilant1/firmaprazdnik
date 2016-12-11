@@ -27,11 +27,24 @@ body {
 
 
 .modal-content {
+
   border:none;
-  font-size: 16pt;
-   .modal-body,.modal-header,.modal-footer {
-    border:none;
-   }
+  font-size: 16px;
+        
+    h2  {
+      font-family: 'Boblic';
+    }
+     .modal-body,.modal-header,.modal-footer {
+      border:none;
+
+     p small.text-muted {
+      font-size: 14px;
+      line-height: 0.1em;
+     }
+     .form-control {
+      font-size: 14px;
+     }
+     }
 }
 
 h1 {
@@ -55,6 +68,9 @@ h2 {
 	height: 100%;
 }
 
+.navbar {
+    padding: 0;
+}
 .navbar-brand{
 	font-size: 20px;
   padding: 10px 0 0 10px;
@@ -65,9 +81,7 @@ h2 {
   margin: 0 10px;
   min-width: 120px;
   min-height: 40px;
-        &:active{
-          background:maroon; 
-        }
+        
         
         
         &:hover{

@@ -60,9 +60,16 @@ body {
 
 .modal-content {
   border: none;
-  font-size: 16pt; }
+  font-size: 16px; }
+  .modal-content h2 {
+    font-family: 'Boblic'; }
   .modal-content .modal-body, .modal-content .modal-header, .modal-content .modal-footer {
     border: none; }
+    .modal-content .modal-body p small.text-muted, .modal-content .modal-header p small.text-muted, .modal-content .modal-footer p small.text-muted {
+      font-size: 14px;
+      line-height: 0.1em; }
+    .modal-content .modal-body .form-control, .modal-content .modal-header .form-control, .modal-content .modal-footer .form-control {
+      font-size: 14px; }
 
 h1 {
   font-size: 3em;
@@ -80,6 +87,9 @@ h2 {
   vertical-align: middle;
   height: 100%; }
 
+.navbar {
+  padding: 0; }
+
 .navbar-brand {
   font-size: 20px;
   padding: 10px 0 0 10px; }
@@ -89,8 +99,6 @@ h2 {
   margin: 0 10px;
   min-width: 120px;
   min-height: 40px; }
-  .navbar-nav .nav-link:active {
-    background: maroon; }
   .navbar-nav .nav-link:hover {
     background: maroon; }
 
