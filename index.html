@@ -25,6 +25,54 @@
     <![endif]-->
   </head>
   <body>
+     <div class="modal fade" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h2 class="modal-title">Закажите свой праздник!</h2>
+          </div>
+          <div class="modal-body">
+            <form>
+               <div class="from-group">
+                 <label><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;8(903)237-00-86&nbsp;|&nbsp;8(905)559-92-91&nbsp;</label>
+
+               </div>
+               <div class="form-group">
+                  <p> <small class="text-muted">Мечту легко осуществить, особенно нашей профессиональной команде с многолетним опытом работы, нужно просто набрать номер:  и сообщить дату, время, адрес, имя ребенка, возраст ребенка, контактный телефон и Ваше имя. Также вы можете сделать заказ прямо здесь: </small>
+                  </p>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Ф.И.О.</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Колышкина Людмила Петровна">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="kolishkina@mail.ru">
+              </div>
+               <div class="form-group">
+                <label for="formGroupExampleInput3">Номер телефона</label>
+                <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="+7 999 334 33 55">
+              </div>
+           
+              <div class="form-group">
+                  <label for="exampleTextarea">Подробности заказа</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+             </div>
+             <div class="form-group">
+                <p> <small class="text-muted">Приглашая Деда Мороза, не забудьте сообщить о том, сколько будет детей на празднике, их возраст, факты из жизни ребенка, черты характера, его увлечения, навыки, которые бы Вы хотели укрепить и развить, воспитывая ребенка. Эти подробности очень важны для нас, ведь мы совместно с вами, создаем праздник для вашего ребенка. </small></p>
+             </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default">Сделать заказ</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <nav class="navbar navbar-fixed-top navbar-default bg-faded">
       <button class="float-md-right float-sm-right float-xs-right navbar-toggler hidden-lg-up " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="glyphicon glyphicon-triangle-bottom"></span></button>
       <div class="collapse navbar-toggleable-md" id="navbarResponsive">
@@ -43,25 +91,27 @@
       </div>
     </nav>
     <section class="main">
+    <div id="snow">
+</div>
       <div class="jumbotron">
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-sm-6 centered">
-              <img class="img-responsive morozik" src="img/morozik.png" alt="Дед Мороз">
+              <img class="img-responsive morozik" src="img/Morozik_2.png" alt="Дед Мороз">
             </div>
             <div class="col-md-6 col-sm-6">
               <div class="info centered">
                 <h1>Дед Мороз и Снегурка</h1>
-                <p>Для сына и дочурки</p>
+                <p>Именно поэтому, наши цены заметно ниже, чем у других агентств Москвы и Области. </p>
                 <p>Успей заказать Деда Мороза своему ребенку, по специальной цене! Новый год наступает на пятки.</p>
               </div>
-              <button type="button" class="btn btn-default">Сделать заказ</button>
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Сделать заказ</button>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <h1>Ваш праздник готов!</h1>
+        <h2>Ваш праздник готов!</h2>
         <div class="row">
           <div class="container">
             <div id="myCarousel" class="owl-carousel">
@@ -107,22 +157,23 @@
         <div class="clearfix">
           <div class="logos col-md-12">
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive " alt="...">
+            <img src="img/2000px-Coat_of_Arms_of_Noginsky_rayon_(Moscow_oblast).svg.png" class="rounded img-responsive" alt="...">
             </span>
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive" alt="...">
+            <img src="img/Gazprom-Logo-ruspng.png" class="rounded img-responsive " alt="...">
             </span>
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive" alt="...">
+            <img src="img/sberbank.png" class="rounded img-responsive " alt="...">
             </span>
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive" alt="...">
+            <img src="img/metrocc.png" class="rounded img-responsive" alt="...">
+            
             </span>
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive" alt="...">
+            <img src="img/okraina.png" class="rounded img-responsive " alt="...">
             </span>
             <span class="partners">
-            <img src="http://placehold.it/75x75" class="rounded img-responsive" alt="...">
+            <img src="img/Flex.png" class="rounded img-responsive " alt="...">
             </span>
           </div>
         </div>
@@ -162,5 +213,9 @@
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+          document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+          ':8888/livereload.js?snipver=1"></' + 'script>')
+    </script>
   </body>
 </html>

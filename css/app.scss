@@ -1,18 +1,62 @@
 @import "./variables.scss";
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import "./navbar-theme.scss";
+@import "http://webfonts.ru/import/freeride.css";
+@import "http://webfonts.ru/import/boblic.css";
 
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 body {
 	padding-top: 40px;
-	font-family: 'Scada', sans-serif;
+	font-family: 'Boblic', sans-serif;
 	font-size: $main-text;	
-	background: #b4e5f9;
-	color:#005290;
+	background: rgba(180, 229, 249, 0.2); 
+  background-image: url('../img/back_texture.png');
+	 background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#005290;
+
+
+}
+
+
+.modal-content {
+
+  border:none;
+  font-size: 16px;
+        
+    h2  {
+      font-family: 'Boblic';
+    }
+     .modal-body,.modal-header,.modal-footer {
+      border:none;
+
+     p small.text-muted {
+      font-size: 14px;
+      line-height: 0.1em;
+     }
+     .form-control {
+      font-size: 14px;
+     }
+     }
 }
 
 h1 {
 	font-size: 3em;
+  font-family: 'Freeride';
+}
+  
+h2 {
+  font-size: 2em;
+  font-family: 'Freeride';
+  margin-bottom: 40px;
+
 }
 
 
@@ -24,40 +68,49 @@ h1 {
 	height: 100%;
 }
 
+.navbar {
+    padding: 0;
+}
 .navbar-brand{
 	font-size: 20px;
+  padding: 10px 0 0 10px;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #ffbbbc;
-    background-color: maroon;
-    padding: 10px;
-    margin: 0 20px;
-   
-    	.navbar-default .navbar-nav > li > a {
-    color: #ecf0f1;
-    padding: 10px;
-    margin: 0 20px;
+
+.navbar-nav .nav-link {
+  padding: 10px;
+  margin: 0 10px;
+  min-width: 120px;
+  min-height: 40px;
+        
+        
+        
+        &:hover{
+          background:maroon; 
+        }
 }
-    }
-    
+
+
+
 
 
 .jumbotron {
-	background: #b4e5f9;
-	background-image: url('../img/bkg_jumbotron.png');
-	background-repeat: no-repeat;
+	background: transparent;
+	// background-image: url('../img/3482.jpg');
+	// background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -10vh;
 	color: #C7254E;
 	border-radius: 0;
-	 	
-	 
+	padding-bottom: 0;
+	 margin-bottom: 0;
 	
 		h1 {
 			font-size: 3em;
 		
 		}
+    
+  
 
 		p {
 			font-size: 1em;
@@ -65,14 +118,13 @@ h1 {
 			}
 		
 		.morozik {
-				max-width: 25vw;
+				max-width: 350px;
 		
 		}
 		
 		.info {
 				padding: 10px;
 				display: inline;
-				
 
 		}	
 			
@@ -123,7 +175,16 @@ h1 {
 
 .partners {
 	margin:20px 20px 80px;
-
+      img {
+        opacity:0.3;
+        max-width: 140px;
+        max-height: 75px;
+        transition: all(0.3);
+        &:hover{
+          opacity:1;
+          cursor:pointer;
+        }
+      }
 }
 
 .logos {
@@ -245,6 +306,7 @@ h1 {
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
+  max-height: 300px;
   float: left;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
@@ -361,13 +423,51 @@ h1 {
   height: 0.625em;
   width: 0.625em;
   margin: 0 0.625em 0.0625em 0;
-  border: 0.125em black solid;
+  border: 0.125em #005290 solid;
   border-radius: 50%;
   cursor: pointer;
 
   &:last-child {margin-right: 0}
 
   &.active {
-    background-color: black;
+    background-color: #005290;
   }
 }
+
+
+#snow{
+  background: none;
+  font-family: Androgyne;
+  background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:10;
+  pointer-events: none;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+} 
