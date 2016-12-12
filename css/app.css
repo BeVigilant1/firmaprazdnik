@@ -173,8 +173,9 @@ h2 {
       color: white; }
 
 .flat-icons {
-  padding-top: 40px;
-  color: white; }
+  padding-top: 40px; }
+  .flat-icons p {
+    color: white; }
   .flat-icons img {
     display: block;
     margin: auto; }
