@@ -96,11 +96,14 @@ h2 {
 
 .navbar-nav .nav-link {
   padding: 10px;
-  margin: 0 10px;
-  min-width: 120px;
+  margin: 0 !important;
+  width: 120px;
   min-height: 40px; }
   .navbar-nav .nav-link:hover {
     background: maroon; }
+  .navbar-nav .nav-link a, .navbar-nav .nav-link li {
+    padding: 0 !important;
+    margin: 0 !important; }
 
 .jumbotron {
   background: transparent;
@@ -139,6 +142,9 @@ h2 {
 
 .flat-icons {
   margin-top: 10vh; }
+  .flat-icons img {
+    display: block;
+    margin: auto; }
 
 .texter {
   text-align: center;
