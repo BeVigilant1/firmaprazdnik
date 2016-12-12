@@ -58,9 +58,22 @@ body {
   background-repeat: no-repeat;
   color: #005290; }
 
+section.main {
+  padding-bottom: 60px; }
+
+section.secondary {
+  padding-top: 60px; }
+
 .modal-content {
+  background: #b4e5f9;
   border: none;
   font-size: 16px; }
+  .modal-content textarea {
+    padding: 10px;
+    border: 4px #005290 solid; }
+  .modal-content input {
+    padding: 10px;
+    border: 4px #005290 solid; }
   .modal-content h2 {
     font-family: 'Boblic'; }
   .modal-content .modal-body, .modal-content .modal-header, .modal-content .modal-footer {
@@ -70,6 +83,22 @@ body {
       line-height: 0.1em; }
     .modal-content .modal-body .form-control, .modal-content .modal-header .form-control, .modal-content .modal-footer .form-control {
       font-size: 14px; }
+    .modal-content .modal-body ::-webkit-input-placeholder, .modal-content .modal-header ::-webkit-input-placeholder, .modal-content .modal-footer ::-webkit-input-placeholder {
+      /* Chrome */
+      color: black;
+      opacity: 0.3; }
+    .modal-content .modal-body :-ms-input-placeholder, .modal-content .modal-header :-ms-input-placeholder, .modal-content .modal-footer :-ms-input-placeholder {
+      /* IE 10+ */
+      color: black;
+      opacity: 0.3; }
+    .modal-content .modal-body ::-moz-placeholder, .modal-content .modal-header ::-moz-placeholder, .modal-content .modal-footer ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: black;
+      opacity: 0.3; }
+    .modal-content .modal-body :-moz-placeholder, .modal-content .modal-header :-moz-placeholder, .modal-content .modal-footer :-moz-placeholder {
+      /* Firefox 4 - 18 */
+      color: black;
+      opacity: 0.3; }
 
 h1 {
   font-size: 3em;
@@ -79,6 +108,9 @@ h2 {
   font-size: 2em;
   font-family: 'Freeride';
   margin-bottom: 40px; }
+
+#padder {
+  padding-top: 120px; }
 
 .centered {
   display: flex;
@@ -141,7 +173,7 @@ h2 {
       color: white; }
 
 .flat-icons {
-  margin-top: 10vh; }
+  padding-top: 40px; }
   .flat-icons img {
     display: block;
     margin: auto; }
@@ -159,15 +191,16 @@ h2 {
 .partners {
   margin: 20px 20px 80px; }
   .partners img {
-    opacity: 0.3;
+    opacity: 0.2;
     max-width: 140px;
     max-height: 75px;
     transition: all(0.3); }
     .partners img:hover {
-      opacity: 1;
+      opacity: 0.6;
       cursor: pointer; }
 
 .logos {
+  padding-top: 120px;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap; }
