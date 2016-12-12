@@ -68,6 +68,7 @@ h2 {
 	height: 100%;
 }
 
+
 .navbar {
     padding: 0;
 }
@@ -78,15 +79,20 @@ h2 {
 
 .navbar-nav .nav-link {
   padding: 10px;
-  margin: 0 10px;
-  min-width: 120px;
+  margin: 0 !important;
+  width: 120px;
   min-height: 40px;
-        
+
         
         
         &:hover{
           background:maroon; 
         }
+        a, li {
+          padding: 0 !important;
+          margin: 0 !important;
+        }
+        
 }
 
 
@@ -156,6 +162,14 @@ h2 {
 
 .flat-icons {
      margin-top: 10vh;
+     
+     img {
+
+    display:block;
+    margin:auto;
+
+
+     }
 }
 
 .texter {
@@ -197,7 +211,9 @@ h2 {
 
 .nav-link {
 	text-align: center;
+
 }
+
 
 /* Carousel vendor styles */
 /* 
